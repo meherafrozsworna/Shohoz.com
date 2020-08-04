@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="driverPane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NearbyDriver">
+   <children>
+      <TableView fx:id="tableField" layoutX="106.0" layoutY="136.0" prefHeight="329.0" prefWidth="489.0">
+        <columns>
+          <TableColumn fx:id="nameField" prefWidth="253.0" text="name" />
+          <TableColumn fx:id="currentLocationField" prefWidth="235.0" text="current_location" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="212.0" layoutY="37.0" prefHeight="78.0" prefWidth="277.0" text="Nearby Drivers">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="489.0" layoutY="511.0" onAction="#backButtonAction" prefHeight="44.0" prefWidth="109.0" style="-fx-background-color: #9CE099;" text="back">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

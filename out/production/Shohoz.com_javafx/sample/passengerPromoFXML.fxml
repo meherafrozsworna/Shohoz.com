@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="passengerPromoPane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PassengerPromoFXML">
+   <children>
+      <TableView fx:id="tableField" layoutX="129.0" layoutY="109.0" prefHeight="394.0" prefWidth="442.0">
+        <columns>
+          <TableColumn fx:id="nameField" prefWidth="222.0" text="name" />
+          <TableColumn fx:id="homeAddressField" prefWidth="219.0" text="home_address" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="163.0" layoutY="31.0" prefHeight="61.0" prefWidth="374.0" text="Passenger who uses promo">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="backButton" buttonType="RAISED" layoutX="429.0" layoutY="517.0" onAction="#backButtonAction" prefHeight="54.0" prefWidth="142.0" style="-fx-background-color: #9CE099;" text="Back">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
